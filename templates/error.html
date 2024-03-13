@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/error.css')}}">
+</head>
+
+<body>
+<div class="error-container">
+    <div class="error-message">
+        <h1>Error</h1>
+        <p>{{ error }}</p>
+        <p>Please try again with correct information (check the id).</p>
+        <a href="/">Go to Home Page</a>
+    </div>
+</div>
+</body>
+
+</html>

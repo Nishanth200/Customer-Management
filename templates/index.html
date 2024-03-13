@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers Management Website</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/style.css')}}">
+</head>
+
+<body>
+<div id="heading">
+    <h1>Customer Management</h1>
+</div>
+<div id="form-container">
+    <form id="addCustomer" action="{{url_for('put_data')}}" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Name" name="name" required>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="Email" name="email" required>
+        <br>
+        <button>Add Customer</button>
+    </form>
+</div>
+
+<br>
+<br>
+
+
+<div class="link-customer">
+    <a href="{{url_for('print_customers')}}">Get Customers</a>
+</div>
+
+
+<br>
+<br>
+
+<div class="delete-form">
+    <div class="second-heading">
+        <h2>Delete Customer</h2>
+    </div>
+    <div id="delete-f">
+        <form action="{{ url_for('delete_c') }}" method="post" id="deleteForm">
+            <label for="userId">User ID (Use Only for Update and Delete):</label>
+            <input type="text" id="userId" name="id" placeholder="Id">
+            <br>
+            <button type="submit">Delete Customer</button>
+        </form>
+    </div>
+</div>
+
+
+<br>
+<br>
+
+<div class="update-form">
+    <div class="second-heading">
+        <h2>Update Customer </h2>
+    </div>
+    <div id="update-f">
+        <form id="" action="{{url_for('update_data')}}" method="POST">
+            <label for="id">User ID:</label>
+            <input type="number" id="id" name="id" placeholder="Id">
+            <label for="name">Name: </label>
+            <input type="text" id="customer_name" placeholder="Name" name="name" required>
+            <label for="email">Email: </label>
+            <input type="email" id="customer_email" placeholder="Email" name="email" required>
+            <br>
+            <button>Update Customer</button>
+        </form>
+    </div>
+</div>
+
+
+<br>
+<br>
+
+<div class="get-form">
+    <div class="second-heading">
+        <h2>Get Specific Customer using Customer Id</h2>
+    </div>
+    <div id="get-f">
+        <form method="post" action="{{ url_for('get_c') }}">
+            <label for="cid">User Id: </label>
+            <input type="text" id="cid" placeholder="Customer ID" name="id">
+            <button type="submit">Get Customer</button>
+        </form>
+    </div>
+</div>
+<div class="customer-list">
+    <ul id="user">
+        {% if customer %}
+        <li>ID:{{ customer['id'] }}<br><br> Email: {{ customer['email'] }} <br><br> Name: {{ customer['name'] }}</li>
+        {% else %}
+        <li class="no-data">No customer data available</li>
+        {% endif %}
+    </ul>
+</div>
+
+
+</body>
+
+</html>

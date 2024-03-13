@@ -1,0 +1,161 @@
+/* static/styles/style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+a {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.delete-form,
+.update-form,
+.get-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.second-heading {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#deleteForm,
+#update-f,
+#get-f {
+    margin-top: 20px;
+}
+
+#user {
+    list-style-type: none;
+    padding: 0;
+}
+
+#user li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#user li:last-child {
+    margin-bottom: 0;
+}
+
+/* Add this to your existing CSS file or create a new one for this component */
+.customer-list {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#user {
+    list-style-type: none;
+    padding: 0;
+}
+
+#user li {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#user li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* Style for the "No customer data available" message */
+#user li.no-data {
+    background-color: #f2f2f2;
+    font-style: italic;
+    color: #888;
+    text-align: center;
+}
+/* Add this to your existing CSS file or create a new one for this component */
+.link-customer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.link-customer a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.link-customer a:hover {
+    background-color: #0056b3;
+}

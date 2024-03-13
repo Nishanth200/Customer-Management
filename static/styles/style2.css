@@ -1,0 +1,113 @@
+/* static/styles/style2.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.customer-list {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.list-c table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#users {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#users li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#users li:last-child {
+    margin-bottom: 0;
+}
+
+#users li span {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px; /* Adjust as needed for your content */
+}
+
+#users li div {
+    display: inline-block;
+    margin-left: 10px;
+}
+/* Add this to your existing CSS file or create a new one for this component */
+.customer-list {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.list-c table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#users {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#users li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#users li:last-child {
+    margin-bottom: 0;
+}
+
+#users li span {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px; /* Adjust as needed for your content */
+}
+
+#users li div {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#users td {
+    text-align: center; /* Center-align text in table cells */
+}
+
+#users th, #users td {
+    padding: 10px; /* Add padding for better visual appearance */
+}
